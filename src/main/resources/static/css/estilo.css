@@ -1,0 +1,85 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 5 feb 2023, 15:06:44
+    Author     : Saul Delgado Calvo
+*/
+#encabezado{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+
+#encabezado h1{
+    display: inline
+}
+
+#menu{
+    position: absolute;
+    top: 8%;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    background-color: aqua;
+    color: black;
+}
+#menu a{
+    background-color: red;
+    color: black;
+}
+#barralateral{
+    position: absolute;
+    top: 12%;
+    left: 0;
+    height: 81%;
+    width: 20%;
+    background-color: red;
+    padding: 10px;
+}
+
+
+#contenido{
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    height: 81%;
+    width: 80%;
+    background-color: aquamarine;
+    padding: 10px;
+    overflow: auto
+}
+#piepagina{
+    position: absolute;
+    bottom:0%;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    background-color: yellowgreen;
+   text-align: center
+}
+
+
+
+#encabezadotabla{
+    background-color: red;
+    color: white;
+}
+
+#tablaresumen tr:nth-child(odd){
+    background-color: chartreuse;
+    color: black;
+       
+    
+}
+#tablaresumen tr:nth-child(even){
+    background-color: yellowgreen;
+    color: black;
+       
+    
+}
