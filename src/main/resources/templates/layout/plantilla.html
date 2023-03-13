@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html xmlns:th="http://thymeleaf.org">
-    <head>
+    <head th:fragment="head">
         <title>TechShop</title>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"/>
+        <script th:src="@{webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{webjars/bootstrap/js/bootstrap.min.js}"></script>
+        
     </head>
     <body>
-        <header th:fragment="header">
-            <h1>TechShop</h1>
+        <header th:fragment="header" class="header">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+                <div class="container">
+                    <a th:href="@{/}" class="navbar-brand">TecnoProductions</a>
+                    <button class="navbar-toggler" datta-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav">
+                            <li class="navbar-item px-2">
+                                <a class="nav-menu-link nav-link" th:href="@{/cliente/listado}">Clientes</a>
+                            </li>
+                             <li class="navbar-item px-2">
+                                <a class="nav-menu-link nav-link" th:href="@{/empleados/listado}">Empleados</a>
+                            </li>
+                    </div>
+                </div>
+            </nav>
+            <section id="main-header" class="py-3 bg-sucess text-black"  >
+                
+                <div class="container">
+                <div class="row">
+                     <div class="col-md-6">
+                         <h1><i class="fas fa-cog"></i>Nuestros</h1>
+                          </div>
+                </div>
+                    </div>
+            </section>
+            
         </header>
-        <footer th:fragment="footer">
-            &COPY Derechos Reservados 2023;
+        <footer th:fragment="footer" class="footer bg-info text-black mt-5 p-2">
+            <div class="container">
+                <div class="col">
+                    <p class="lead text-center">&COPY Derechos Reservados 2023;</p>
+                </div>
+                
+            </div>
+            
         </footer>
     </body>
 </html>
